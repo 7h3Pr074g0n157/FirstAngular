@@ -1,0 +1,40 @@
+.card {
+  min-height: 550px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+  }
+
+  button {
+    width: 50%;
+    height: 32px;
+    border: unset;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      right: 0;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+}

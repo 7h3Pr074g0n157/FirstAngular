@@ -1,0 +1,15 @@
+<div class="profile-row margin-bottom-16">
+  <img src="assets/img/hamster/{{ img }}" />
+  <div class="name">
+    <b>{{ name }}</b>
+    <br />
+    <span class="description">{{ description }}</span>
+  </div>
+
+  <a
+    *ngIf="canFollow"
+    href="#"
+    (click)="ps.addFriend(name, description, img); canFollow = false"
+    >Folgen</a
+  >
+</div>

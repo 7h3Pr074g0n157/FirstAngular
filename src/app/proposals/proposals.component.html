@@ -1,0 +1,15 @@
+<app-profile-row [canFollow]="false"></app-profile-row>
+
+<div class="margin-bottom-16">
+  <h2>Freundesvorschläge</h2>
+
+  <ul>
+    <li *ngFor="let friendProposal of ps.profiles">
+      <app-profile-row
+        [name]="friendProposal.name"
+        [description]="friendProposal.description"
+        [img]="friendProposal.img"
+      ></app-profile-row>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,8 @@
+<div class="standard-card padding-16 friend-row">
+  <div *ngIf="FriendBoxComponent.friends.length === 0">Du hast keine Freunde 🐹</div>
+
+  <div class="friend" *ngFor="let friend of FriendBoxComponent.friends">
+    <img src="assets/img/hamster/{{ friend.img }}" />
+    {{ friend.name }}
+  </div>
+</div>
